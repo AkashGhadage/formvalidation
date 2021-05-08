@@ -1,0 +1,11 @@
+.input-width {
+  max-width: 430px;
+}
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: -1px;
+}

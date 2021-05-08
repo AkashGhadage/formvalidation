@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css\styles.css" rel="stylesheet" type="text/css" />
+      
+    <!-- *jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form target="Index.html" class="form" id="Form">
+
+            <div class="form-row">
+                <div class="col-12">
+                    <h2>Interested in our Online Program?</h2>
+                    <p>Leave us your contact details so that we can send you the latest updates.</p>
+                </div>
+
+                <!-- @*Email*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-group">
+                        <label for="Email">*Email Address</label>
+                        <input type="text" id="Email" placeholder="Email Address" class="form-control input-width">
+                        <label for="" id="EmailValidation" class="text-danger"></label>
+                    </div>
+                </div>
+
+                <!-- @*Current Status*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-group">
+                        <label for="Status">*Current Status</label>
+                        <select name="Status" id="Status" class="form-control input-width">
+                            <option>Select</option>
+                            <option value="Student" selected="true">Student</option>
+                            <option value="Employed">Employed</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <label for="" id="StatusValidation" class="text-danger"></label>
+                </div>
+
+                <!-- @* Resident Country*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-group">
+                        <label for="Country">*Resident Country</label>
+                        <select name="Country" id="Country" class="form-control input-width">
+                            <option value="Select">Select</option>
+                            <option value="India" selected="true">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="UAE">UAE</option>
+                        </select>
+                    </div>
+                    <label for="" id="CountriesValidation" class="text-danger"></label>
+                </div>
+
+                <!-- @*Mobile Number*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-group">
+                        <label for="Number">Mobile Number (optional)</label>
+                        <input type="text" id="Number" class="form-control input-width">
+                        <label for="" id="NumberValidation" class="text-danger"></label>
+                    </div>
+
+                </div>
+
+                <!-- @*Resident State*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-group">
+                        <label for="State">*Resident State/Union Territory</label>
+                        <select name="State" id="State" class="form-control input-width">
+                            <option selected>Select From List</option>
+                            <option value="Maharastra">Maharastra</option>
+                            <option value="Kerla">Kerla</option>
+                            <option value="Gujrat">Gujrat</option>
+                        </select>
+                        <label for="" id="StateValidation" class="text-danger"></label>
+                    </div>
+                </div>
+
+                <!-- @*Resident City*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-group">
+
+                        <label for="City">*Resident City / Town</label>
+                        <select name="City" id="City" class="form-control input-width">
+                            <option selected>Select From List</option>
+                            <option value="Kolhapur">Kolhapur</option>
+
+                        </select>
+                        <label for="" id="CityValidation" class="text-danger"></label>
+
+                    </div>
+                </div>
+
+                <!-- @*Source*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-group">
+
+                        <label for="Source">*How did you hear about us?</label>
+                        <select name="Source" id="Source" class="form-control input-width">
+                            <option>Select</option>
+                            <option value="print Newspaper" selected="">print Newspaper</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <label for="" id="SourceValidation" class="text-danger"></label>
+                    </div>
+                </div>
+
+                <!-- @*EnteryOptions*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <label for="">*Which Application are you interested in?</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input ml-1" id="Entry" name="Entry" type="radio"
+                                value="Regular Entry">Regular Entry
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input ml-1" id="Entry" name="Entry" type="radio"
+                                value="Diploma Only Entry">Diploma Only Entry
+                        </label>
+                    </div>
+                    <span id="EntryValidation" class="text-danger"></span>
+                </div>
+
+                <!-- @*mode(s) of communication*@ -->
+                <div class="col-md-6 col-lg-5">
+
+                    <label for="">*Preferred mode(s) of communication</label>
+                    <br />
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" value="" id="chk_Email" class="form-check-input ml-1">
+                        <label for="chk_Email" class="form-check-label">Email</label>
+
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" value="" id="chk_WhatsApp" class="form-check-input ml-1">
+                        <label for="chk_WhatsApp" class="form-check-label">WhatsApp</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" value="" id="chk_SMS" class="form-check-input ml-1">
+                        <label for="chk_SMS" class="form-check-label">SMS</label>
+                    </div>
+                    <label for="" id="Communication_Mode_Validation" class="text-danger"></label>
+                </div>
+
+
+                <!-- @*Interest*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <label for="">*Interested in info about live sessions?</label>
+                    <br />
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" id="Interest" name="Interest" class="form-check-input ml-1"
+                                value="YES">Yes
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" id="Interest" name="Interest" class="form-check-input ml-1"
+                                value="NO">No
+                        </label>
+                    </div>
+                    <label for="" id="InterestValidation" class="text-danger"></label>
+                </div>
+
+
+
+                <!-- @*paragraph*@ -->
+                <div class="col-md-12 col-lg-10 mt-3">
+                    <p>
+                        By clicking submit, I agree to receive updates via emails,
+                        SMS and WhatsApp messages from IITM Online Degree Program.
+                        I understand that I can unsubscribe anytime by writing to support@onlinedegree.iitm.ac.in.
+                    </p>
+                </div>
+
+                <!-- @*SUBMIT Button*@ -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-danger" id="btnSubmit" value="SUBMIT" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- Bootstrap core JS-->
+ 
+</body>
+
+</html>
